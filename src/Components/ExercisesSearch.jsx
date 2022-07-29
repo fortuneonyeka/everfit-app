@@ -3,7 +3,7 @@ import { Box, Button, Stack, TextField, Typography } from "@mui/material";
 import { borderRadius, color, textAlign } from "@mui/system";
 
 const ExercisesSearch = () => {
-  
+  const [search, setSearch] = useState("")
   return (
     <Stack alignItems="center" mt="37px" justifyContent="center" p="20px">
       <Typography
@@ -28,8 +28,8 @@ const ExercisesSearch = () => {
             
           }}
           height="76px"
-          value=""
-          onChange={(e) => {}}
+          value={search}
+          onChange={(e) => setSearch(e.target.value.toLowerCase())}
           placeholder="Search Exercises"
           type="text"
           
