@@ -4,7 +4,9 @@ import HeroBanner from "../Components/HeroBanner"
 import Exercises from "../Components/Exercises"
 import ExercisesSearch from "../Components/ExercisesSearch"
 
+
 const Home = () => {
+ 
   const [exercises, setExercises] = useState([])
   const [bodyPart, setBodyPart] = useState("all ")
   return (
