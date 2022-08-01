@@ -56,7 +56,7 @@ margin-top: -330px;
 width: 400px;
 height: 445px;
 background: #fff;
-border-top: 4px solid #FF2625;
+border-top: 4px solid #008000;
 border-bottom-left-radius: 20px;
 text-decoration: none;
 display: flex;
@@ -76,7 +76,10 @@ transition: 0.3s all ease-in-out;
 .exercise-card:hover,
 .bodyPart-card:hover {
 transform: scale(1.1, 1.1);
+box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+
 }
+
 .search-btn:hover {
 color: #fff !important;
 border: 1px solid #fff !important;
