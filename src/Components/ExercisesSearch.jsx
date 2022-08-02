@@ -13,7 +13,7 @@ const ExercisesSearch = ({bodyPart, setBodyPart,setExercises}) => {
 
   useEffect(() => {
    const fetchExercisesData = async () => {
-    const bodyPartsData = await fetchData(bodyPartsUrl,exerciseOptions)
+     const bodyPartsData = await fetchData(bodyPartsUrl,exerciseOptions)
 
     setBodyParts(["all", ...bodyPartsData])
    }
@@ -83,7 +83,7 @@ const ExercisesSearch = ({bodyPart, setBodyPart,setExercises}) => {
         </Button>
       </Box>
       <Box sx={{postion: "relative", width: "100%", p:"20px" }}>
-          <HorizontalScrollbar data={bodyParts} bodyPart={bodyPart} setBodyPart={setBodyPart}/>
+          <HorizontalScrollbar data={bodyParts} bodyPart={bodyPart} setBodyPart={setBodyPart} isBodyPart/>
       </Box>
     </Stack>
   );

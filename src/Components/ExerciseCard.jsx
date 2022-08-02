@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Button, Stack, Typography } from "@mui/material";
-import { textTransform } from "@mui/system";
 
 const ExerciseCard = ({ exercise }) => {
   return (
@@ -12,10 +11,10 @@ const ExerciseCard = ({ exercise }) => {
           sx={{
             ml: "21px",
             color: "#fff",
-            '&:hover': {
-              backgroundColor: '#fff',
-              color: '#ffa9a9',
-          },
+            "&:hover": {
+              backgroundColor: "#fff",
+              color: "#ffa9a9",
+            },
             backgroundColor: "#ffa9a9",
             fontSize: "14px",
             borderRadius: "20px",
@@ -28,10 +27,10 @@ const ExerciseCard = ({ exercise }) => {
           sx={{
             ml: "21px",
             color: "#fff",
-            '&:hover': {
-              backgroundColor: '#fff',
-              color: '#fcc757',
-          },
+            "&:hover": {
+              backgroundColor: "#fff",
+              color: "#fcc757",
+            },
             backgroundColor: "#fcc757",
             fontSize: "14px",
             borderRadius: "20px",
@@ -41,7 +40,16 @@ const ExerciseCard = ({ exercise }) => {
           {exercise.target}
         </Button>
       </Stack>
-      <Typography ml="21px" color="#000" fontWeight="bold" mt="11px" pb="10px" sx={{textTransform:"capitalize", fontSize:"22px"}}>{exercise.name}</Typography>
+      <Typography
+        ml="21px"
+        color="#000"
+        fontWeight="bold"
+        mt="11px"
+        pb="10px"
+        sx={{ textTransform: "capitalize", fontSize: "22px" }}
+      >
+        {exercise.name}
+      </Typography>
     </Link>
   );
 };

@@ -7,7 +7,7 @@ const HeroBanner = () => {
       <Typography color="#008000" fontWeight="600" fontSize="28">
         Fitness Heaven
       </Typography>
-      <Typography fontWeight={700} sx={{fontSize: {lg: "44px", xs:"40px"}}}>
+      <Typography fontWeight={700} sx={{fontSize: {lg: "44px", xs:"40px"}}} color="#FF0000">
         No PAIN!!!, <br /> No GAIN!!!
       </Typography>
       <Typography  fontSize="25px" lineHeight="35px" mt={2} mb={3} >
